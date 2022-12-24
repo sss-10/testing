@@ -50,6 +50,7 @@ st.set_page_config(
     layout='centered',
     page_icon="🛃"
 )
+nltk.download('all')
 st.title('Sentiment Analysis Of Amazon Customer Reviews')
 with st.spinner("Loading data, this may take time..."):
     df = load_data()
