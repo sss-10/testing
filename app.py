@@ -30,7 +30,8 @@ def load_data():
     stop=stopwords.words('english')
     st = PorterStemmer()
     sia=SentimentIntensityAnalyzer()
-    df=pd.read_csv(r'B:\Ayushi\project-master\project-master\dataset\1429_1.csv')
+    url = "https://drive.google.com/file/d/1CSMwEd5NB-FnQO9TlOBa3WcNVlCdi2BE/view?usp=sharing";
+    df=pd.read_csv(url)
     columns = ['id','name','keys','manufacturer','reviews.dateAdded', 'reviews.date','reviews.didPurchase',
         'reviews.userProvince', 'reviews.dateSeen', 'reviews.doRecommend','asins',
         'reviews.id', 'reviews.numHelpful', 'reviews.sourceURLs', 'reviews.title','reviews.userCity']
