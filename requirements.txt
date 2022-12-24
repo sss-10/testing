@@ -2,3 +2,4 @@ matplotlib
 textblob
 plotly
 seaborn
+nltk.corpus.stopwords
